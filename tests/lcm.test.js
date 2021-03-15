@@ -7,8 +7,8 @@ test("There is no LCM of a set containing Zero", () => {
     expect(() => lcm(0, 1, 4, 6)).toThrowError(/zero/)
 })
 
-test("lcm() throws an error with if called with fewer than 2 arguments", () => {
-    expect(() => lcm(1)).toThrowError(/one/)
+test("lcm() throws an error with if called with fewer than 1 argument", () => {
+    expect(() => lcm()).toThrowError(/no/)
 })
 
 // finds the correct answer
